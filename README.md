@@ -7,3 +7,6 @@
 
 ### SpringCloud 之熔断器 Hystrix
 > 博客地址：[https://blog.csdn.net/qq_41402200/article/details/90447408](https://blog.csdn.net/qq_41402200/article/details/90447408)
+
+### SpringCloud 之熔断监控 Hystrix Dashboard
+> 博客地址：[https://blog.csdn.net/qq_41402200/article/details/90576780](https://blog.csdn.net/qq_41402200/article/details/90576780)
