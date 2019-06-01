@@ -21,7 +21,10 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 
 turbine:
+  # 监控的应用名称，多个以逗号隔开
   app-config: hystrix-a,hystrix-b
   aggregator:
+    # 指定聚合哪些集群，默认为 default
     clusterConfig: default
+  # 指定集群名称为 default
   clusterNameExpression: new String("default")
