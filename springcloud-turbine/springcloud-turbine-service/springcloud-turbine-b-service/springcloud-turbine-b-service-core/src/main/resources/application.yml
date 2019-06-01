@@ -5,7 +5,7 @@ server:
 # 应用名称
 spring:
   application:
-    name: hystrix-b
+    name: turbine-b
 
 eureka:
   instance:

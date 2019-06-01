@@ -22,7 +22,7 @@ eureka:
 
 turbine:
   # 监控的应用名称，多个以逗号隔开
-  app-config: hystrix-a,hystrix-b
+  app-config: turbine-a,turbine-b
   aggregator:
     # 指定聚合哪些集群，默认为 default
     clusterConfig: default

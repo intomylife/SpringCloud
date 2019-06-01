@@ -19,7 +19,7 @@ public class AUseBFeignController {
 
     /*
      * @ClassName FeignController
-     * @Desc TODO   通过 hystrix-b 服务名调用 b() 方法
+     * @Desc TODO   通过 turbine-b 服务名调用 b() 方法
      * @Date 2019/5/20 23:13
      * @Version 1.0
      */

@@ -19,7 +19,7 @@ public class BUseCFeignController {
 
     /*
      * @ClassName FeignController
-     * @Desc TODO   通过 hystrix-c 服务名调用 c() 方法
+     * @Desc TODO   通过 turbine-c 服务名调用 c() 方法
      * @Date 2019/5/20 23:13
      * @Version 1.0
      */

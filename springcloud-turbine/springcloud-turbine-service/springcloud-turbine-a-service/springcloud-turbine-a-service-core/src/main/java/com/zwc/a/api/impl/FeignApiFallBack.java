@@ -14,7 +14,7 @@ public class FeignApiFallBack implements FeignApi {
 
     /*
      * @ClassName FeignApiFallBack
-     * @Desc TODO   调用 hystrix-b 服务中的 b() 方法失败时执行
+     * @Desc TODO   调用 turbine-b 服务中的 b() 方法失败时执行
      * @Date 2019/5/20 23:31
      * @Version 1.0
      */

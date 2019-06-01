@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Date 2019/5/20 23:10
  * @Version 1.0
  */
-@FeignClient(value = "hystrix-c" , fallback = FeignApiFallBack.class)
+@FeignClient(value = "turbine-c" , fallback = FeignApiFallBack.class)
 public interface FeignApi {
 
     /*
      * @ClassName FeignApi
-     * @Desc TODO   通过 hystrix-c 服务名调用 c() 方法
+     * @Desc TODO   通过 turbine-c 服务名调用 c() 方法
      * @Date 2019/5/20 23:10
      * @Version 1.0
      */
