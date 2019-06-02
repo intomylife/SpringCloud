@@ -10,3 +10,6 @@
 
 ### SpringCloud 之熔断监控 Hystrix Dashboard
 > 博客地址：[https://blog.csdn.net/qq_41402200/article/details/90576780](https://blog.csdn.net/qq_41402200/article/details/90576780)
+
+### SpringCloud 之监控数据聚合 Turbine
+> 博客地址：[https://blog.csdn.net/qq_41402200/article/details/90732956](https://blog.csdn.net/qq_41402200/article/details/90732956)
