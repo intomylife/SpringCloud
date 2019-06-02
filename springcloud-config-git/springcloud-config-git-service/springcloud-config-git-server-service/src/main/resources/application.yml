@@ -1,0 +1,22 @@
+# 端口
+server:
+  port: 8000
+
+spring:
+  application:
+    # 应用名称
+    name: config-git-server
+  cloud:
+    config:
+      server:
+        git:
+          # 仓库地址
+          uri: https://github.com/intomylife/SpringCloud/
+          # 对应 {label} 部分，即 Git 的分支
+          label: master
+          # 仓库文件夹名称，多个以逗号分隔
+          search-paths: springcloud-config-git/config-repo
+          # git 仓库用户名（公开库可以不用填写）
+          username:
+          # git 仓库密码（公开库可以不用填写）
+          password:
