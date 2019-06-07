@@ -1,0 +1,35 @@
+# 端口
+server:
+  port: 8001
+
+spring:
+  application:
+    # 应用名称
+    name: config-eureka-server
+  cloud:
+    config:
+      server:
+        git:
+          # 仓库地址
+          uri: https://github.com/intomylife/SpringCloud
+          # 对应 {label} 部分，即 Git 的分支
+          label: master
+          # 仓库文件夹名称，多个以逗号分隔
+          search-paths: springcloud-config-eureka/config-repo
+          # git 仓库用户名（公开库可以不用填写）
+          username:
+          # git 仓库密码（公开库可以不用填写）
+          password:
+
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      # 注册中心地址
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/

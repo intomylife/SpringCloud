@@ -1,0 +1,8 @@
+# 端口
+server:
+  port: 8002
+
+spring:
+  application:
+    # 应用名称
+    name: config-eureka-client
