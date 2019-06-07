@@ -11,7 +11,7 @@ spring:
       server:
         git:
           # 仓库地址
-          uri: https://github.com/intomylife/SpringCloud/
+          uri: https://github.com/intomylife/SpringCloud
           # 对应 {label} 部分，即 Git 的分支
           label: master
           # 仓库文件夹名称，多个以逗号分隔

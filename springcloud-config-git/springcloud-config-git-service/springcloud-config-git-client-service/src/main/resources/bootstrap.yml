@@ -2,7 +2,7 @@ spring:
   cloud:
     config:
       # 仓库地址
-      uri: http://127.0.0.1:8000/
+      uri: http://127.0.0.1:8000
       # 对应 {label} 部分，即 Git 的分支
       label: master
       # 对应 {application} 部分
