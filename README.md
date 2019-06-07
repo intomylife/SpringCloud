@@ -13,3 +13,6 @@
 
 ### SpringCloud 之监控数据聚合 Turbine
 > 博客地址：[https://blog.csdn.net/qq_41402200/article/details/90732956](https://blog.csdn.net/qq_41402200/article/details/90732956)
+
+### SpringCloud 之配置中心 Config（Git 版）
+> 博客地址：[https://blog.csdn.net/qq_41402200/article/details/91126435](https://blog.csdn.net/qq_41402200/article/details/91126435)
