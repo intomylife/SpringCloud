@@ -16,3 +16,6 @@
 
 ### SpringCloud 之配置中心 Config（Git 版）
 > 博客地址：[https://blog.csdn.net/qq_41402200/article/details/91126435](https://blog.csdn.net/qq_41402200/article/details/91126435)
+
+### 	SpringCloud 之配置中心 Config（高可用）
+> 博客地址：[https://blog.csdn.net/qq_41402200/article/details/91175252](https://blog.csdn.net/qq_41402200/article/details/91175252)
