@@ -17,5 +17,8 @@
 ### SpringCloud 之配置中心 Config（Git 版）
 > 博客地址：[https://intomylife.blog.csdn.net/article/details/91126435](https://intomylife.blog.csdn.net/article/details/91126435)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/91126435)
 
-### 	SpringCloud 之配置中心 Config（高可用）
+### SpringCloud 之配置中心 Config（高可用）
 > 博客地址：[https://intomylife.blog.csdn.net/article/details/91175252](https://intomylife.blog.csdn.net/article/details/91175252)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/91175252)
+
+### SpringCloud 之配置中心 Config（消息总线）
+> 博客地址：[https://intomylife.blog.csdn.net/article/details/92077652](https://intomylife.blog.csdn.net/article/details/92077652)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/92077652)
