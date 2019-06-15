@@ -1,0 +1,46 @@
+spring:
+  cloud:
+    config:
+      # 对应 {label} 部分，即 Git 的分支
+      label: master
+      # 对应 {application} 部分
+      name: system
+      # 对应 {profile} 部分
+      profile: dev
+      discovery:
+        # 开启 Config 服务发现与注册
+        enabled: true
+        # 指定 server
+        service-id: config-bus-server
+    bus:
+      # 开启消息跟踪
+      enabled: true
+      trace:
+        enabled: true
+  kafka:
+    consumer:
+      # 指定默认消费者 group id
+      # 如果不设置，将会使用 commons 工程中的 group-id，那时调用 /actuator/bus-refresh 接口只会刷新其中一个 client
+      # 因为在同一个组中的 Consumer，同一个主题只会被一个 Consumer 接收
+      group-id: config-bus-client-first-group
+
+
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      # 注册中心地址
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 开启刷新端点
+        include: bus-refresh

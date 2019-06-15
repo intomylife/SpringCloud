@@ -1,0 +1,25 @@
+# 端口
+server:
+  port: 8761
+
+# 应用名称
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    # 是否向注册中心注册自己
+    registerWithEureka: false
+    # 是否向注册中心获取注册信息
+    fetchRegistry: false
+    serviceUrl:
+      # 注册中心地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

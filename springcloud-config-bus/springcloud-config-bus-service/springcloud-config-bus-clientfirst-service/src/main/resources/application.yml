@@ -1,0 +1,8 @@
+# 端口
+server:
+  port: 9000
+
+spring:
+  application:
+    # 应用名称
+    name: config-bus-client-first
