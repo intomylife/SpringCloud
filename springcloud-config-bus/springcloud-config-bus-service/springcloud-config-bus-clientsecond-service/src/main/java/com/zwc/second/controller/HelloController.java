@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @ClassName HelloController
- * @Desc TODO   读取 git 配置文件
+ * @Desc TODO   读取 server 配置文件
  * @Date 2019/6/2 16:54
  * @Version 1.0
  */
@@ -20,7 +20,7 @@ public class HelloController {
 
     /*
      * @ClassName HelloController
-     * @Desc TODO   读取 git 配置文件
+     * @Desc TODO   读取 server 配置文件
      * @Date 2019/6/2 16:56
      * @Version 1.0
      */

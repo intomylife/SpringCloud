@@ -31,7 +31,7 @@
 
     <!-- 加入依赖 -->
     <dependencies>
-        <!-- SpringCloud bus & kafka 依赖 -->
+        <!-- spring cloud bus & kafka 依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-kafka</artifactId>
