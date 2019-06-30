@@ -22,3 +22,6 @@
 
 ### SpringCloud 之配置中心 Config（消息总线）
 > 博客地址：[https://intomylife.blog.csdn.net/article/details/92077652](https://intomylife.blog.csdn.net/article/details/92077652)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/92077652)
+
+### SpringCloud 之服务网关 Gateway
+> 博客地址：[https://intomylife.blog.csdn.net/article/details/94333830](https://intomylife.blog.csdn.net/article/details/94333830)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/94333830)
