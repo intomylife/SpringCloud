@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 继承父 -->
+    <parent>
+        <groupId>com.zwc</groupId>
+        <artifactId>springcloud-gateway-service</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <!-- 三坐标 -->
+    <groupId>com.zwc</groupId>
+    <artifactId>springcloud-gateway-a-service</artifactId>
+    <version>1.0</version>
+
+    <!-- 工程名称描述 -->
+    <name>springcloud-gateway-a-service</name>
+    <description>服务工程 - A</description>
+
+    <!-- 打包方式 -->
+    <packaging>pom</packaging>
+
+    <!-- 子模块 -->
+    <modules>
+        <module>springcloud-gateway-a-service-api</module>
+        <module>springcloud-gateway-a-service-core</module>
+    </modules>
+
+</project>

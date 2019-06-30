@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 继承父 -->
+    <parent>
+        <groupId>com.zwc</groupId>
+        <artifactId>springcloud-gateway-service</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <!-- 三坐标 -->
+    <groupId>com.zwc</groupId>
+    <artifactId>springcloud-gateway-master-service</artifactId>
+    <version>1.0</version>
+
+    <!-- 工程名称描述 -->
+    <name>springcloud-gateway-master-service</name>
+    <description>Spring Cloud Gateway 服务网关</description>
+
+    <!-- 打包方式 -->
+    <packaging>jar</packaging>
+
+    <!-- 在 properties下声明相应的版本信息，然后在 dependency 下引用的时候用 ${} 就可以引入该版本 jar 包了 -->
+    <properties>
+        <!-- ali json -->
+        <fastjson.version>1.2.47</fastjson.version>
+    </properties>
+
+    <!-- 加入依赖 -->
+    <dependencies>
+        <!-- 提供者消费者 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!-- gateway -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+        </dependency>
+
+        <!-- hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <!-- ali json依赖 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+    </dependencies>
+
+    <!-- 插件依赖 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
