@@ -1,0 +1,51 @@
+# 端口
+server:
+  port: 8000
+
+spring:
+  application:
+    # 应用名称
+    name: sleuth-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 是否和服务注册与发现组件结合，设置为 true 后可以直接使用应用名称调用服务
+          enabled: true
+      # 路由（routes：路由，它由唯一标识（ID）、目标服务地址（uri）、一组断言（predicates）和一组过滤器组成（filters）。filters 不是必需参数。）
+      routes:
+      # 路由标识（id：标识，具有唯一性）
+      - id: route_simple
+        # 目标服务地址（uri：地址，请求转发后的地址）
+        uri: http://localhost:8090/aUseB
+        # 路由条件（predicates：断言，匹配 HTTP 请求内容）
+        predicates:
+        ## 匹配 GET 请求
+        - Method=GET
+
+  zipkin:
+      # 指定了 zipkin 服务器的地址
+      base-url: http://${spring.cloud.client.ip-address}:9411
+  sleuth:
+    sampler:
+      # 将采样比例设置为 1.0，也就是全部都需要。默认是 0.1
+      probability: 1.0
+
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      # 注册中心地址
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+logging:
+  level:
+    # log 级别
+    org.springframework.cloud.gateway: debug
