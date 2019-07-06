@@ -25,3 +25,7 @@
 
 ### SpringCloud 之服务网关 Gateway
 > 博客地址：[https://intomylife.blog.csdn.net/article/details/94333830](https://intomylife.blog.csdn.net/article/details/94333830)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/94333830)
+
+### SpringCloud 之链路跟踪 Sleuth
+> 博客地址：[https://intomylife.blog.csdn.net/article/details/94865516](https://intomylife.blog.csdn.net/article/details/94865516)[ ⚡ 备用链接](https://blog.csdn.net/qq_41402200/article/details/94865516)
+
