@@ -30,3 +30,9 @@ HELP.md
 
 ### Others ###
 .DS_Store
+*/.DS_Store
+
+### Nacos ###
+**/logs/
+**/work/
+**/distribution/target/

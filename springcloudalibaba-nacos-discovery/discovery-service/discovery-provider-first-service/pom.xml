@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 继承父 -->
+	<parent>
+		<groupId>com.zwc</groupId>
+		<artifactId>discovery-service</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<!-- 三坐标 -->
+	<groupId>com.zwc</groupId>
+	<artifactId>discovery-provider-first-service</artifactId>
+	<version>1.0.0</version>
+
+	<!-- 工程名称描述 -->
+	<name>discovery-provider-first-service</name>
+	<description>提供者一号服务工程</description>
+
+	<!-- 打包方式 -->
+	<packaging>pom</packaging>
+
+	<!-- 子模块 -->
+	<modules>
+		<module>discovery-provider-first-service-api</module>
+		<module>discovery-provider-first-service-core</module>
+	</modules>
+
+</project>
