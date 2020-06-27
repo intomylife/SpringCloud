@@ -145,7 +145,7 @@
 
 ## 联系我
 
-> 如果您有任何疑问，或者有宝贵的建议，欢迎提交 [issues](https://github.com/intomylife/SpringBoot/issues)。
+> 如果您有任何疑问，或者有宝贵的建议，欢迎提交 [issues](https://github.com/intomylife/SpringCloud/issues)。
 
 或通过如下方式联系我：
 
