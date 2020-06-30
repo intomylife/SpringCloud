@@ -49,7 +49,7 @@
         <!-- SpringCloud -->
         <spring-cloud-dependencies.version>Finchley.SR2</spring-cloud-dependencies.version>
         <!-- SpringCloudAlibaba -->
-        <spring-cloud-alibaba-dependencies.version>2.0.1.RELEASE</spring-cloud-alibaba-dependencies.version>
+        <spring-cloud-alibaba-dependencies.version>2.0.2.RELEASE</spring-cloud-alibaba-dependencies.version>
     </properties>
 
     <!-- 加入依赖 -->
