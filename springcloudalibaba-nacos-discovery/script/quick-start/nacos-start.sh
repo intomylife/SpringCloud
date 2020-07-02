@@ -5,7 +5,7 @@
 echo [INFO] ----------------------------- start --------------------------------------
 
 ## 获取当前 Nacos 进程
-PID=`ps aux | grep nacos | grep -v grep | grep -v /bin/bash | awk '{ print $2 }'`
+PID=`ps aux | grep nacos.nacos | grep -v grep | grep -v /bin/bash | awk '{ print $2 }'`
 
 ## 为空才能启动
 if [ $PID ];

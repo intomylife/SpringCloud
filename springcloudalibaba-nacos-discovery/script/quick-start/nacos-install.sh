@@ -14,7 +14,7 @@ mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U
 cd distribution/target/nacos-server-1.2.1/nacos/bin
 
 ## 获取当前 Nacos 进程
-PID=`ps aux | grep nacos | grep -v grep | grep -v /bin/bash | awk '{ print $2 }'`
+PID=`ps aux | grep nacos.nacos | grep -v grep | grep -v /bin/bash | awk '{ print $2 }'`
 
 ## 为空才能启动
 if [ $PID ];
