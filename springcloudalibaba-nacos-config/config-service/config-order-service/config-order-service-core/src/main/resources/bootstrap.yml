@@ -1,0 +1,29 @@
+spring:
+  application:
+    # 应用名称
+    name: order-config
+  cloud:
+    nacos:
+      config:
+        # 配置中心地址
+        server-addr: 127.0.0.1:8848
+        # 用户名
+        username: nacos
+        # 密码
+        password: nacos
+        # 命名空间：用来区分不同的服务模块
+        namespace: order-config-namespace
+        # 分组：用来区别不同的环境（dev, stg, prd）
+        group: dev
+        # 配置内容的数据格式：在配置中心以 .yml 结尾的 Data Id（Data Id：配置集，类似于文件名）
+        file-extension: yml
+        # 扩展配置，加载多配置集：用在把配置文件拆分成多个的场景。
+        extension-configs[0]:
+          refresh: true
+          data-id: redis.yml
+          group: stg
+        # extension 越往后权重越高
+        extension-configs[1]:
+          refresh: true
+          data-id: mysql.yml
+          group: dev

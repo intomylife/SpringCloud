@@ -1,0 +1,61 @@
+spring:
+  # 选择环境
+  profiles:
+    ## 动态从 bootstrap.yml 中获取当前环境
+    active: ${spring.cloud.nacos.config.group}
+    ## 开发环境
+    ## active: dev
+    ## 测试环境
+    ## active: stg
+    ## 生产环境
+    ## active: prd
+
+  cloud:
+    nacos:
+      discovery:
+        # 注册中心地址
+        server-addr: 127.0.0.1:8848
+        # 用户名
+        username: nacos
+        # 密码
+        password: nacos
+        # 命名空间：用来区分不同的服务模块
+        namespace: user-config-namespace
+
+---
+
+# 端口
+server:
+  port: 11000
+
+spring:
+  ## 开发环境
+  profiles: dev
+
+  ## 单个环境经常改动的配置
+
+---
+
+# 端口
+server:
+  port: 11000
+
+spring:
+  ## 测试环境
+  profiles: stg
+
+  ## 单个环境经常改动的配置
+
+---
+
+# 端口
+server:
+  port: 11000
+
+spring:
+  ## 生产环境
+  profiles: prd
+
+  ## 单个环境经常改动的配置
+
+---
