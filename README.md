@@ -28,6 +28,8 @@
 
     * [SpringCloud 之服务注册与发现 Eureka + 客户端 Feign](https://blog.csdn.net/qq_41402200/article/details/90264207)
 
+    * [SpringCloudAlibaba 之服务注册与发现 Nacos](https://blog.csdn.net/qq_41402200/article/details/107121599)
+
 * 熔断器
 
     * [SpringCloud 之熔断器 Hystrix](https://blog.csdn.net/qq_41402200/article/details/90447408)
