@@ -17,7 +17,7 @@ then
 else
 
     ## 单机启动
-    sh discovery-service/discovery-master-service/nacos-1.2.1/distribution/target/nacos-server-1.2.1/nacos/bin/startup.sh -m standalone
+    sh config-service/config-master-service/nacos-1.2.1/distribution/target/nacos-server-1.2.1/nacos/bin/startup.sh -m standalone
 
     ## 结束
     echo [INFO] ----------------------------- end --------------------------------------

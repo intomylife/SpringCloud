@@ -5,7 +5,7 @@
 echo [INFO] ----------------------------- start --------------------------------------
 
 ## 进入到 Nacos 源码目录
-cd discovery-service/discovery-master-service/nacos-1.2.1
+cd config-service/config-master-service/nacos-1.2.1
 
 ## 构建
 mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U
