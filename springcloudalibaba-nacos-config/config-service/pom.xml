@@ -26,7 +26,7 @@
     <modules>
         <!-- 辅助工程（自动创建数据库和表） -->
         <module>config-flyway-service</module>
-        <!-- 注册中心（这里的注册中心工程其实就是 Nacos 的源码，放入项目中只是为了好找到；不引入是因为编译打包后的 nacos-1.2.1 依赖太多，加载时会卡顿一会） -->
+        <!-- 配置中心（这里的配置中心工程其实就是 Nacos 的源码，放入项目中只是为了好找到；不引入是因为编译打包后的 nacos-1.2.1 依赖太多，加载时会卡顿一会） -->
         <!--<module>config-master-service</module>-->
         <!-- 订单服务工程 -->
         <module>config-order-service</module>
