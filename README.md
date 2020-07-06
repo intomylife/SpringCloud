@@ -48,6 +48,8 @@
 
     * [SpringCloud 之配置中心 Config（消息总线）](https://blog.csdn.net/qq_41402200/article/details/92077652)
 
+    * [SpringCloudAlibaba 之配置中心 Nacos](https://blog.csdn.net/qq_41402200/article/details/107136797)
+
 * 服务网关
 
     * [SpringCloud 之服务网关 Gateway](https://blog.csdn.net/qq_41402200/article/details/94333830)
