@@ -81,7 +81,7 @@ spring:
         uri: https://www.zouwencong.com
         # 路由条件（predicates：断言，匹配 HTTP 请求内容）
         predicates:
-        ## 转发地址格式为 uri/archive，/str 部分会被下面的过滤器给截取掉
+        ## 转发地址格式为 /str/archive，/str 部分会被下面的过滤器给截取掉
         - Path=/str/archive
         filters:
         ## 截取路径位数
